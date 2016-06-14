@@ -1,0 +1,22 @@
+# Documentation: https://roots.io/trellis/docs/vault/
+vault_mysql_root_password: toro11
+
+# Documentation: https://roots.io/trellis/docs/security/
+vault_sudoer_passwords:
+  admin: z0bimr8IGvyg
+
+# Variables to accompany `group_vars/production/wordpress_sites.yml`
+# Note: the site name (`example.com`) must match up with the site name in the above file.
+vault_wordpress_sites:
+  betongogbygg.no:
+    env:
+      db_password: toro11
+      # Generate your keys here: https://roots.io/salts.html
+      auth_key: "jEUse`}A38%]xHU109,e4,UkXJ^q0lil8&&n,G/Zo/_5cLBLph@zAU4|x{1}_[YW"
+      secure_auth_key: "$qvL2:pL0]mhVj%c)g^-?g?Oj+qosa3j{ALvMh&wq?Rwkk:`fhPx2_N;krR/=^FZ"
+      logged_in_key: "ts?$ts?XHOidZ`<?i?NJT2A@MQsUhjX,m|8vS<3I82<_VEHpuE[<5njj-<g2&(2g"
+      nonce_key: "s{,{4#CWxS|U+a{@nzkfQ<seSSURId3s)hrkkIGZXKv%!hPpbv/d=X-36<!M8]pg"
+      auth_salt: "j5`AR>TJT`Nl9M8qV8xGyNuloc`!uv]MuU[aP2`!a4%RqY7bVb$!s7JHuSWa|-]%"
+      secure_auth_salt: "6usZf*TEa77[vBY;!<b#:W%xXRy6x,@iCEJ;k3t8s)lN^)->KQZ0Ld08fQQ<Zl#S"
+      logged_in_salt: "6Oud3b7t8IC)sLToCX)}h*Yp)VtsjutS.J&vPe}IV/lA]%YIigf(D^n&5s3xHpG/"
+      nonce_salt: "_Iu,(H9vbgm*[DZ!cqX|r5:R4O4p)5EhqP>8&^(-{Q5i7[ML0bPekeqOqe]xb;mr"
